@@ -1,0 +1,27 @@
+Contact Form <!-- add html form --><div><form data-mage-init='{ "validation":{ "rules":{ "field1":{ "required": true }, "field2":{ "required": true }, "field3":{ "required": true }, "field4":{ "required": true }, "field5":{ "required": true } } } }' class="form contact-inchoo" action="" id="contact-form" method="post" data-hasrequired="* Required Fields"><label>Field 1:</label> <input type="text" id="field1" name="field1" value="" class="input-text"><br/><label>Field 2:</label> <input type="text" id="field2" name="field2" value="" class="input-text"><br/><label>Field 3:</label> <input type="text" id="field3" name="field3" value="" class="input-text"><br/><label>Field 4:</label> <input type="text" id="field4" name="field4" value="" class="input-text"><br/><label>Message:</label> <textarea name='field5'></textarea><br/><?php echo $block->getChildHtml('form.additional.info'); ?> <input type="submit" class=""action submit primary name="submit" value="send msg" /></form></div><script type="text/javascript">
+require([
+	"jquery"
+	],function($) {
+    $(document).ready(function() {
+        var customurl = "<?php echo $this->getUrl().'vendormagento/contact/insert'?>";
+        $.ajax({
+            url: customurl,
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                field1: 'field1',
+                field2: 'field2',
+                field3: 'field3',
+                field4: 'field4',
+            },
+        	complete: function(response) {             
+	            country = response.responseJSON.default_country;
+	            state = response.responseJSON.state;         
+	            console.log(state+' '+country);   
+            },
+            error: function (xhr, status, errorThrown) {
+                console.log('Error happens. Try again.');
+            }
+        });
+    });
+});</script>

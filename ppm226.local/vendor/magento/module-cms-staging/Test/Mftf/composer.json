@@ -1,0 +1,19 @@
+{
+    "name": "magento/functional-test-module-cms-staging",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magento/magento2-functional-testing-framework": "2.2.0",
+        "magento/functional-test-module-backend": "100.0.0-dev",
+        "magento/functional-test-module-cms": "100.0.0-dev",
+        "magento/functional-test-module-staging": "100.0.0-dev",
+        "magento/functional-test-module-ui": "100.0.0-dev"
+    },
+    "type": "magento2-test",
+    "license": [
+        "proprietary"
+    ]
+}

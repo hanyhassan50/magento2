@@ -1,0 +1,16 @@
+{
+    "name": "magento/functional-test-module-message-queue",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magento/magento2-functional-testing-framework": "2.2.0",
+        "magento/magento-composer-installer": "100.0.0-dev"
+    },
+    "type": "magento2-test",
+    "license": [
+        "proprietary"
+    ]
+}

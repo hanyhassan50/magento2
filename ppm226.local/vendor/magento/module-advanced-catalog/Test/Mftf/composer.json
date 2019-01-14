@@ -1,0 +1,19 @@
+{
+    "name": "magento/functional-test-module-advanced-catalog",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magento/functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-testing-framework": "2.2.0"
+    },
+    "suggest": {
+        "magento/functional-test-module-grouped-product": "100.0.0-dev"
+    },
+    "type": "magento2-test",
+    "license": [
+        "proprietary"
+    ]
+}

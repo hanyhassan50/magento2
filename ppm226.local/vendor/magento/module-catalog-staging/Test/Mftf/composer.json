@@ -1,0 +1,32 @@
+{
+    "name": "magento/functional-test-module-catalog-staging",
+    "description": "N/A",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.0.13|~7.1.0",
+        "magento/functional-test-module-staging": "100.0.0-dev",
+        "magento/functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-testing-framework": "2.2.0",
+        "magento/functional-test-module-backend": "100.0.0-dev",
+        "magento/functional-test-module-url-rewrite": "100.0.0-dev",
+        "magento/functional-test-module-ui": "100.0.0-dev",
+        "magento/functional-test-module-catalog-search": "100.0.0-dev",
+        "magento/functional-test-module-store": "100.0.0-dev",
+        "magento/functional-test-module-eav": "100.0.0-dev",
+        "magento/functional-test-module-customer": "100.0.0-dev",
+        "magento/functional-test-module-search": "100.0.0-dev",
+        "magento/magento-composer-installer": "100.0.0-dev"
+    },
+    "suggest": {
+        "magento/functional-test-module-catalog-import-export": "100.0.0-dev",
+        "magento/functional-test-module-indexer": "100.0.0-dev",
+        "magento/functional-test-module-quote": "100.0.0-dev",
+        "magento/functional-test-module-catalog-url-rewrite": "100.0.0-dev"
+    },
+    "type": "magento2-test",
+    "license": [
+        "proprietary"
+    ]
+}
